@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.divider {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.left-side {
+    flex: 1;
+    /* background: url(https://images.pexels.com/photos/3748221/pexels-photo-3748221.jpeg?auto=compress&cs=tinysrgb&w=1600); */
+
+    background-image: url(images/ope3.jpeg); 
+
+    /* background: url(https://images.pexels.com/photos/4322027/pexels-photo-4322027.jpeg?auto=compress&cs=tinysrgb&w=1600); */
+    height: 100%;
+    background-size: cover;
+    background-position: 50% 15%;
+    min-height: 450px;
+}
+
+.right-side {
+    flex: 1;
+    /*background: url(https://images.pexels.com/photos/9420591/pexels-photo-9420591.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load);*/
+    /* background: url(https://images.pexels.com/photos/716398/pexels-photo-716398.jpeg?auto=compress&cs=tinysrgb&w=1600); */
+    height: 100%;
+    background-size: cover;
+    color: #fff;
+    height: 100vh;  
+}
+
+.content {
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    color: black;
+}
+
+.content nav {
+    flex: 1;
+    background: white;
+    border-bottom: 1px solid #e7e7e7;
+    display: flex;
+}
+
+.content nav ul {
+    flex: 1;
+    font-family: 'Poppins', sans-serif;
+    list-style-type: none;
+}
+
+.content nav .right-links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.content nav .right-links li {
+    margin-right: 20px;
+    
+}
+
+.content .hero {
+    display: flex;
+    flex: 8;
+    background: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .hero h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+.content footer {
+    flex: 1;
+    background: white;
+    border-top: 1px solid #e7e7e7;
+    color: black;
+}
+
+.content footer ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+}
+
+.content footer ul li {
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+.hero-contents {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-contents button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #fff;
+    border: 1px solid #4aaee7;
+   /* border-radius: 50px; */
+    outline: none;
+    color: #4aaee7;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: background 0.15s ease-in;
+}
+
+.hero-contents button:hover {
+    background: #4aaee7;
+    color: #fff;
+}
+
+/* Let's make it responsive */
+@media screen and (max-width:705px) {
+    .divider {
+        flex-direction: column;
+    }
+}
+
+/* that's all folks.
+learnt ths from easy tutorials, kindly follow him on youtube */
